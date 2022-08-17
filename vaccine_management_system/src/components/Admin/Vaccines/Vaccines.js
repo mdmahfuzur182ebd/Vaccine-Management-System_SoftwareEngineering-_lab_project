@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Vaccines = () => {
    const [users, setUser] = useState([]);
@@ -18,10 +18,11 @@ const Vaccines = () => {
   };
 
 
-  return (<div className="container">
+  return (
+    <div className="container">
       <div className="py-">
         <h1>Vaccines Information</h1>
-        <table class="table border shadow">
+        <table class="table table-primary border shadow">
           <thead class="thead-dark">
             <tr>
               <th scope="col">#</th>
@@ -35,8 +36,8 @@ const Vaccines = () => {
               <th>Action</th>
             </tr>
           </thead>
-          <tbody>
-             <tr>
+          {/* <tbody>
+             <tr className="table-light">
                  <th scope="row">1</th>
                  <td>Mark</td>
                  <td>Dook</td>
@@ -46,12 +47,12 @@ const Vaccines = () => {
                  <td>India</td>
                  <td>500k</td>
              </tr>
-          </tbody>
+          </tbody> */}
           <tbody>
             {users.map((user, index) => (
-              <tr>
+              <tr className="table-light">
                 <th scope="row">{index + 1}</th>
-                <td>{user.name}</td>
+                <td >{user.name}</td>
                 <td>{user.username}</td>
                 <td>{user.email}</td>
                 <td>{user.email}</td>
@@ -59,21 +60,8 @@ const Vaccines = () => {
                 <td>{user.email}</td>
                 <td>{user.email}</td>
                 <td>
-                  <Link class="btn btn-primary mr-2" to={`/users/${user.id}`}>
-                    View
-                  </Link>
-                  <Link
-                    class="btn btn-outline-primary mr-2"
-                    to={`/users/edit/${user.id}`}
-                  >
-                    Edit
-                  </Link>
-                  <Link
-                    class="btn btn-danger"
-                    onClick={() => deleteUser(user.id)}
-                  >
-                    Delete
-                  </Link>
+                  <Link class="btn btn-outline-primary mr-2">Edit</Link>
+                  <Link class="btn btn-danger">Delet</Link>
                 </td>
               </tr>
             ))}
