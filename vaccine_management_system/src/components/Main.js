@@ -1,6 +1,8 @@
 import React from 'react';
-import Admin from './Admin/Admin';
+
 import Header from './header/Header';
+import User from './User/User';
+
 // import Home from './Home/Home';
 // import Admin from '../components/Admin/Admin';
 // import User from '../components/User/User';
@@ -20,8 +22,8 @@ const Main = props => {
                 <Route path="/nurse" exact component={Nurse} />
                 <Route path="/" exact component={Home} />
             </div> */}
-            <Admin/>
-        
+          
+            <User/>
           
 
         </div>
