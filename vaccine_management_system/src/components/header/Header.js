@@ -18,7 +18,7 @@ const Header = () => {
             }}>
                 <NavbarBrand href="/" className="mr-auto ml-md-5 Brand">
                     <img src={Logo} alt="Logo" width="80px" />
-                    <NavbarBrand href="/" lassName="mr-auto ml-md-5 Brand" >Vaccine Management System</NavbarBrand>
+                    <NavbarBrand  lassName="mr-auto ml-md-5 Brand" >Vaccine Management System</NavbarBrand>
                 </NavbarBrand>
                
                 <Nav className="mr-md-5">

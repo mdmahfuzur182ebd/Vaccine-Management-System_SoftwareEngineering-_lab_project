@@ -12,6 +12,7 @@
     "date": "^2.0.0",
     "dateformat": "^5.0.3",
     "file-base64": "^1.0.0",
+    "formik": "^2.2.9",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
