@@ -1,7 +1,7 @@
 import React from 'react';
+import Auth from './Auth/Auth';
 
 import Header from './header/Header';
-import User from './User/User';
 
 // import Home from './Home/Home';
 // import Admin from '../components/Admin/Admin';
@@ -23,7 +23,7 @@ const Main = props => {
                 <Route path="/" exact component={Home} />
             </div> */}
           
-            <User/>
+            <Auth/>
           
 
         </div>
