@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Adminlogin = () => {
+const NurseLogin = () => {
     return (
     <div className="container">
       <div className="w-75 mx-auto shadow py-4">
-        <h1 className='text-center mb-4'>Admin Login!</h1>
+        <h1 className='text-center mb-4'>Nurse Login!</h1>
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Admin Username</label>
+            <label for="exampleInputEmail1">Nurse Username</label>
             <br/>
             <input
               type="email"
@@ -41,4 +41,4 @@ const Adminlogin = () => {
   );
 }
 
-export default Adminlogin;
+export default NurseLogin;
