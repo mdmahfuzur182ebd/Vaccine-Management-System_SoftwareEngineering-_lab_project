@@ -4,7 +4,8 @@ import Header from './header/Header';
 
 // import Home from './Home/Home';
 // import Admin from '../components/Admin/Admin';
-import User from '../components/User/UserVaccineRegistration';
+//import User from '../components/User/UserVaccineRegistration';
+import VaccineRegInfo from './Admin/VaccineRegistrationInfo/VaccineRegInfo';
  //import Nurse from '../components/Nurse/NurseLogin';
 
 
@@ -21,7 +22,7 @@ const Main = props => {
                 <Route path="/nurse" exact component={Nurse} />
                 <Route path="/" exact component={Home} />
             </div> */}
-            <User />
+            <VaccineRegInfo/>
            
 
         </div>
