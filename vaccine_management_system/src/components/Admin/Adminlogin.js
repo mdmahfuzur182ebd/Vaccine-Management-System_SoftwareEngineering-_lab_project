@@ -1,13 +1,14 @@
 import React from 'react';
 
-const Admin = () => {
+const Adminlogin = () => {
     return (
     <div className="container">
       <div className="py-4">
         <h1>Admin Login!</h1>
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label for="exampleInputEmail1">Admin Username</label>
+            <br/>
             <input
               type="email"
               class="form-control"
@@ -26,18 +27,9 @@ const Admin = () => {
               id="exampleInputPassword1"
             />
           </div>
-          <div class="form-group form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1">
-              Check me out
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            Submit
+          <br/>
+          <button type="submit" class="btn mr-3 btn-primary">
+            Login
           </button>
         </form>
       </div>
@@ -45,4 +37,4 @@ const Admin = () => {
   );
 }
 
-export default Admin
+export default Adminlogin;

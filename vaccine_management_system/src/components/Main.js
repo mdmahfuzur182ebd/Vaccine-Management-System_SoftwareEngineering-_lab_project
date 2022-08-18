@@ -1,6 +1,5 @@
 import React from 'react';
-import Auth from './Auth/Auth';
-
+import Admin from './Admin/Adminlogin';
 import Header from './header/Header';
 
 // import Home from './Home/Home';
@@ -23,7 +22,9 @@ const Main = props => {
                 <Route path="/" exact component={Home} />
             </div> */}
           
-            <Auth/>
+            
+            <Admin/>
+           
           
 
         </div>

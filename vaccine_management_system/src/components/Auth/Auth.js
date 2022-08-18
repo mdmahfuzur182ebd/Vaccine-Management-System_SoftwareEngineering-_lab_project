@@ -35,7 +35,7 @@ const Auth = () => {
   return (
      <Container component='main' maxWidth='xs'>
          <div>
-               <h1 >User Login Form </h1>
+               <h1 >User Login page</h1>
          </div> 
         <Paper className={classes.paper} elevation={3}>
            <Avatar className={classes.avatar} >
