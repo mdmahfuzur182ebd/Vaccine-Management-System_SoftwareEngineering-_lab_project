@@ -4,10 +4,10 @@ const NurseLogin = () => {
     return (
     <div className="container">
       <div className="w-75 mx-auto shadow py-4">
-        <h1 className='text-center mb-4'>Nurse Login!</h1>
+        <h1 className='text-center mb-4' style={{color:'white'}}>Nurse Login!</h1>
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Nurse Username</label>
+            <label for="exampleInputEmail1"  style={{color:'white'}}>Nurse Username</label>
             <br/>
             <input
               type="email"
@@ -17,12 +17,9 @@ const NurseLogin = () => {
               name="email"
               value=""
             />
-            <small id="emailHelp" class="form-text text-muted">
-              We'll never share your email with anyone else.
-            </small>
           </div>
           <div class="form-group mr-2">
-            <label for="exampleInputPassword1">Password</label>
+            <label for="exampleInputPassword1"  style={{color:'white'}}>Password</label>
             <input
               type="password"
               class="form-control"

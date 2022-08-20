@@ -5,8 +5,8 @@ const Home = () => {
      <>
       <div className='home-page'>
         <div className='home-div'> 
-              <p className='pt-5'>WELSOME</p>
-              <h1>We Are The MERN De</h1>
+              <p className='pt-5' style={{color:'white'}}>WELCOME TO</p>
+              <h1 style={{color:'white'}}>Vaccine Mangagement System</h1>
         </div>
       </div>
      </>

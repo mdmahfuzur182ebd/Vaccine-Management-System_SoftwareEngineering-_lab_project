@@ -1,30 +1,24 @@
 import React from 'react';
 
 import Header from './header/Header';
+import Admin from '../components/Admin/Adminlogin';
 
-// import Home from './Home/Home';
-// import Admin from '../components/Admin/Admin';
-//import User from '../components/User/UserVaccineRegistration';
-import VaccineRegInfo from './Admin/VaccineRegistrationInfo/VaccineRegInfo';
- //import Nurse from '../components/Nurse/NurseLogin';
-
-
-// import { Route } from 'react-router-dom';
+import User from '../components/User/UserVaccineRegistration';
+import Nurse from '../components/Nurse/NurseLogin';
+import Home from '../components/Home/Home';
+import Auth from '../components/Auth/Auth';
+import { Route, Router } from 'react-router-dom';
 
 const Main = props => {
     return (
         <div>
            <Header />
-             {/* <div className="container">
+             <div className="container">
                 <Route path="/admin" component={Admin} />
-                <Route path="/vaccines" component={Vaccines} />
-                <Route path="/user" component={User} />
+                <Route path="/user" component={Auth} />
                 <Route path="/nurse" exact component={Nurse} />
                 <Route path="/" exact component={Home} />
-            </div> */}
-            <VaccineRegInfo/>
-           
-
+            </div>
         </div>
     )
 }

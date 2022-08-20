@@ -4,10 +4,10 @@ const Adminlogin = () => {
     return (
     <div className="container">
       <div className="w-75 mx-auto shadow py-4">
-        <h1 className='text-center mb-4'>Admin Login!</h1>
+        <h1 className='text-center mb-4'  style={{color:'white'}}>Admin Login!</h1>
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Admin Username</label>
+            <label for="exampleInputEmail1"  style={{color:'white'}}>Admin Username</label>
             <br/>
             <input
               type="email"
@@ -22,7 +22,7 @@ const Adminlogin = () => {
             </small>
           </div>
           <div class="form-group mr-2">
-            <label for="exampleInputPassword1">Password</label>
+            <label for="exampleInputPassword1"  style={{color:'white'}}>Password</label>
             <input
               type="password"
               class="form-control"
