@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div className="Navigation">
             <Navbar style={{
-                backgroundColor: "#f26d3e",
+                backgroundColor: "grey",
                 height: "85px",
             }}>
                 <NavbarBrand href="/" className="mr-auto ml-md-5 Brand">
@@ -33,9 +33,6 @@ const Header = () => {
                     </NavItem>
                     <NavItem>
                         <NavLink exact to="/nurse" className="NavLink">Nurse</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink exact to="/dashboard" className="NavLink">Dashboard</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar>

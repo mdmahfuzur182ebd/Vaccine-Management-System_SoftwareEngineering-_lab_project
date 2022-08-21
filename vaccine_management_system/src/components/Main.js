@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from './header/Header';
 import { Route, Routes, } from 'react-router-dom';
-import Adminlogin from './Admin/Adminlogin';
-import Dashboard from './Dashboard/Dashboard';
+import Admin from '../components/Admin/Admin';
 import Home from './Home/Home';
-import Auth from './User/Auth/Auth';
+import LoginReg from './User/LoginReg';
 
 
 
@@ -15,11 +14,9 @@ const Main = props => {
             <Header/>
              <div className="container">
                 <Routes>
-                        <Route path="/admin" element={<Adminlogin/>} />
-                        <Route path="/dashboard" element={<Dashboard/>} />
-                        <Route path="/user" element={<Auth/>} />
+                        <Route path="/admin" element={<Admin/>} />
+                        <Route path="/user" element={<LoginReg/>} />
                         <Route path="/" element={<Home/>} />
-                        
                 </Routes>
             </div> 
         </div>   
@@ -27,4 +24,4 @@ const Main = props => {
 }
 
 
-export default Main;
+export default Main; 
