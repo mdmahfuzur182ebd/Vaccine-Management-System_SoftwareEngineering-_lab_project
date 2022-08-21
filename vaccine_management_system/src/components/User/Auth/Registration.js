@@ -3,12 +3,15 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Registration = () => {
+
   const [error, setError] = useState({
     status: false,
     msg: "",
     type: ""
   })
+
   const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
@@ -19,12 +22,14 @@ const Registration = () => {
       password_confirmation: data.get('password_confirmation'),
       tc: data.get('tc'),
     }
+
+
     if (actualData.name && actualData.email && actualData.password && actualData.password_confirmation && actualData.tc !== null) {
       if (actualData.password === actualData.password_confirmation) {
         console.log(actualData);
         document.getElementById('registration-form').reset()
         setError({ status: true, msg: "Registration Successful", type: 'success' })
-        navigate('/dashboard')
+        navigate('')
       } else {
         setError({ status: true, msg: "Password and Confirm Password Doesn't Match", type: 'error' })
       }
@@ -32,6 +37,8 @@ const Registration = () => {
       setError({ status: true, msg: "All Fields are Required", type: 'error' })
     }
   }
+
+  
   return <>
     <Box component='form' noValidate sx={{ mt: 1 }} id='registration-form' onSubmit={handleSubmit}>
       <TextField margin='normal' required fullWidth id='name' name='name' label='Name' />

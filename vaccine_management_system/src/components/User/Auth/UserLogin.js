@@ -1,6 +1,11 @@
 import { TextField, Button, Box, Alert } from '@mui/material';
 import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
+
+
+
+
+
 const UserLogin = () => {
   const [error, setError] = useState({
     status: false,
@@ -8,19 +13,22 @@ const UserLogin = () => {
     type: ""
   })
   const navigate = useNavigate();
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
+
     const actualData = {
       email: data.get('email'),
       password: data.get('password'),
     }
+
     if (actualData.email && actualData.password) {
       console.log(actualData);
 
       document.getElementById('login-form').reset()
       setError({ status: true, msg: "Login Success", type: 'success' })
-      navigate('/dashboard')
+      navigate('/vaccineRegistion')
     } else {
       setError({ status: true, msg: "All Fields are Required", type: 'error' })
     }
