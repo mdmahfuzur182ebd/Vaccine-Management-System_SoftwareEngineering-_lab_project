@@ -21,6 +21,7 @@ const Main = props => {
                         <Route path="/user" element={<LoginReg/>} />
                     </Route>   
                     <Route path="/vaccineRegistion" element={<VaccineRegistion/>} />
+                    <Route path="*" element={<h1 style={{color:'white'}}>Error 404 Page not found !!</h1>} />
                 </Routes>
                  
             </div> 

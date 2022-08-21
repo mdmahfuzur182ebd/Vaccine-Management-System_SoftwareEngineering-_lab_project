@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Card, Tabs, Typography, Tab, Box } from '@mui/material';
 import { useState } from 'react';
-import Pic1 from '../../assets/Vaccine.png';
+import Pic1 from '../../assets/doctor.png';
 import { ShoppingBag } from '@mui/icons-material';
 import AdminLogin from '../Admin/AdminLogin';
 import NurseLogin from '../Nurse/NurseLogin';

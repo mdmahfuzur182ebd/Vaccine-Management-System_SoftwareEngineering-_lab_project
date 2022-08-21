@@ -3,15 +3,13 @@ import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 
 
-
-
-
 const UserLogin = () => {
   const [error, setError] = useState({
     status: false,
     msg: "",
     type: ""
   })
+
   const navigate = useNavigate();
   
   const handleSubmit = (e) => {
@@ -33,6 +31,7 @@ const UserLogin = () => {
       setError({ status: true, msg: "All Fields are Required", type: 'error' })
     }
   }
+  
   return <>
     <Box component='form' noValidate sx={{ mt: 1 }} id='login-form' onSubmit={handleSubmit}>
       <TextField margin='normal' required fullWidth id='email' name='email' label='Email Address' />
