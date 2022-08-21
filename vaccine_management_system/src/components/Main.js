@@ -1,27 +1,28 @@
 import React from 'react';
-
 import Header from './header/Header';
-//import Admin from '../components/Admin/Adminlogin';
+import { Route, Routes, } from 'react-router-dom';
+import Adminlogin from './Admin/Adminlogin';
+import Dashboard from './Dashboard/Dashboard';
+import Home from './Home/Home';
+import Auth from './User/Auth/Auth';
 
-//import User from '../components/User/UserVaccineRegistration';
-import Nurse from '../components/Nurse/NurseLogin';
-import Home from '../components/Home/Home';
-import Auth from '../components/Auth/Auth';
-import { Route, } from 'react-router-dom';
-import Dashboard from './pages/Dashboard/Dashboard';
+
 
 const Main = props => {
     return (
+
         <div>
-           <Header />
+            <Header/>
              <div className="container">
-                {/* <Route path="/admin" component={Admin} /> */}
-                <Route path="/user" component={Auth} />
-                <Route path="/nurse" exact component={Nurse} />
-                <Route path="dashboard/*" component={Dashboard}/>
-                <Route path="/" exact component={Home} />
-            </div>
-        </div>
+                <Routes>
+                        <Route path="/admin" element={<Adminlogin/>} />
+                        <Route path="/dashboard" element={<Dashboard/>} />
+                        <Route path="/user" element={<Auth/>} />
+                        <Route path="/" element={<Home/>} />
+                        
+                </Routes>
+            </div> 
+        </div>   
     )
 }
 

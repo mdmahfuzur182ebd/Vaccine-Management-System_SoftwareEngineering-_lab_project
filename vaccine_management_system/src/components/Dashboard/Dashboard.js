@@ -1,22 +1,23 @@
+import * as React from 'react';
 import { createTheme, styled, ThemeProvider } from '@mui/material/styles';
-import {
-  Box,
-  Toolbar,
-  CssBaseline,
-  Typography,
-  IconButton,
-  Tooltip,
-} from '@mui/material';
 import MuiAppBar from '@mui/material/AppBar';
 import { Brightness4, Brightness7, Home, Menu } from '@mui/icons-material';
 import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SideList from './SideList';
 
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import CssBaseline from '@mui/material/CssBaseline';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import { Tooltip } from '@mui/material';
+
+
 
 
 const drawerWidth = 240;
-
 
 
 const AppBar = styled(MuiAppBar, {
@@ -35,7 +36,6 @@ const AppBar = styled(MuiAppBar, {
       duration: theme.transitions.duration.enteringScreen,
     }),
   }),
-
 }));
 
 
@@ -43,6 +43,7 @@ const AppBar = styled(MuiAppBar, {
 export default function Dashboard() {
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(true);
+
 
   const darkTheme = useMemo(
     () =>
@@ -53,15 +54,13 @@ export default function Dashboard() {
       }),
     [dark]
   );
-
-
+  
   const handleDrawerOpen = () => {
     setOpen(true);
   };
 
-
-
   const navigate = useNavigate();
+
   return (
     <ThemeProvider theme={darkTheme}>
       <Box sx={{ display: 'flex' }}>
@@ -78,13 +77,15 @@ export default function Dashboard() {
                 ...(open && { display: 'none' }),
               }}
             >
-              <Menu />
+              <MenuIcon />
             </IconButton>
+
             <Tooltip title="Go back to home page">
-              <IconButton sx={{ mr: 1 }} onClick={() => navigate('/')}>
-                <Home />
-              </IconButton>
+                <IconButton sx={{ mr: 1 }} onClick={() => navigate('/')}>
+                  <Home />
+                </IconButton>
             </Tooltip>
+
             <Typography
               variant="h6"
               noWrap
@@ -93,9 +94,11 @@ export default function Dashboard() {
             >
               Dashboard
             </Typography>
+
             <IconButton onClick={() => setDark(!dark)}>
               {dark ? <Brightness7 /> : <Brightness4 />}
             </IconButton>
+
           </Toolbar>
         </AppBar>
         <SideList {...{ open, setOpen }} />

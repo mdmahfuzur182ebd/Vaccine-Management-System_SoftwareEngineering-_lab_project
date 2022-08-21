@@ -33,7 +33,7 @@ const Auth = () => {
 
 
   return (
-     <Container component='main' maxWidth=''> 
+     <Container component='main' maxWidth='xl'> 
             <h1 style={{color:'white'}}>Welcome To User Login</h1>
           
         <Paper className={classes.paper} elevation={3}>
