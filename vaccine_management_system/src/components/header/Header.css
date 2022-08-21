@@ -1,17 +1,17 @@
 .Navigation {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .Brand {
     color: white;
-    font-size: 15px;
-    margin-top: -20px;
+    font-size: 12px;
+    margin-top: -12px;
 }
 
 .NavLink {
     text-decoration: none;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: -25px;
     margin-left: 10px;
 }
@@ -23,6 +23,6 @@
 
 .active 
 {
-    text-shadow: 1px 1px gray;
+    text-shadow: 1px 1px rgb(134, 187, 44);
     color: wheat ;
 }

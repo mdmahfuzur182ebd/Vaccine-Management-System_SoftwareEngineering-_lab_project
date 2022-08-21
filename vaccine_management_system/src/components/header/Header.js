@@ -13,11 +13,11 @@ const Header = () => {
     return (
         <div className="Navigation">
             <Navbar style={{
-                backgroundColor: "grey",
-                height: "85px",
+                backgroundColor: "#6d1b7b",
+                height: "70px",
             }}>
                 <NavbarBrand href="/" className="mr-auto ml-md-5 Brand">
-                    <img src={Logo} alt="Logo" width="80px" />
+                    <img src={Logo} alt="Logo" width="50px" />
                     <NavbarBrand  lassName="mr-auto ml-md-5 Brand" >Vaccine Management System</NavbarBrand>
                 </NavbarBrand>
                
