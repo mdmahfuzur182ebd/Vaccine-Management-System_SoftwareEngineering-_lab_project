@@ -31,9 +31,6 @@ const Header = () => {
                     <NavItem>
                         <NavLink exact to="/user" className="NavLink">User</NavLink>
                     </NavItem>
-                    <NavItem>
-                        <NavLink exact to="/nurse" className="NavLink">Nurse</NavLink>
-                    </NavItem>
                 </Nav>
             </Navbar>
         </div>
