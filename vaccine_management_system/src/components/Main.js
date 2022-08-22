@@ -6,6 +6,7 @@ import Home from './Home/Home';
 import LoginReg from './User/Auth/LoginReg';
 import VaccineRegistion from './User/VaccineRegistion';
 import Layout from './User/Layout';
+import  Vaccines  from '../components/other/Vaccines/Vaccines';
 
 
 
@@ -21,6 +22,7 @@ const Main = props => {
                         <Route path="/user" element={<LoginReg/>} />
                     </Route>   
                     <Route path="/vaccineRegistion" element={<VaccineRegistion/>} />
+                    <Route path="/vaccines" element={<Vaccines/>} />
                     <Route path="*" element={<h1 style={{color:'white'}}>Error 404 Page not found !!</h1>} />
                 </Routes>
                  

@@ -19,15 +19,15 @@ const AdminLogin = () => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     const actualData = {
-      email: data.get('username'),
+      email: data.get('email'),
       password: data.get('password'),
     }
-    if (actualData.username  && actualData.password) {
+    if (actualData.email  && actualData.password) {
       console.log(actualData);
 
       document.getElementById('login-form').reset()
       setError({ status: true, msg: "Login Success", type: 'success' })
-      navigate('/dashboard')
+      navigate('/vaccines')
     } else {
       setError({ status: true, msg: "All Fields are Required", type: 'error' })
     }
@@ -36,7 +36,7 @@ const AdminLogin = () => {
 
   return <>
     <Box component='form' noValidate sx={{ mt: 1 }} id='login-form' onSubmit={handleSubmit}>
-      <TextField margin='normal' required fullWidth id='username' name='username' label='User Name' />
+      <TextField margin='normal' required fullWidth id='email' name='email' label='Email Address' />
 
       <TextField margin='normal' required fullWidth id='password' name='password' label='Password' type='password' />
 
